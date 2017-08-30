@@ -1,8 +1,10 @@
+from .discard import Discard
+
 class Player(object):
     def __init__(self):
         self.hand = None
         self.deck = None
-        self.discard = None
+        self.discard_pile = Discard()
         self.board = None
 
     def draw(self):
@@ -20,4 +22,4 @@ class Player(object):
         elif card in self.board:
             self.board.remove(card)
 
-        self.discard.add(card)
+        self.discard_pile.discard(card)
