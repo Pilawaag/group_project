@@ -6,7 +6,7 @@ class Player(object):
         self.board = None
 
     def draw(self):
-        if len(deck) <= 0:
+        if len(self.deck) <= 0:
             raise Exception("Deck is empty, can't draw")
 
         card = self.deck.draw()
