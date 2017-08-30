@@ -12,7 +12,7 @@ class TestPlayer(TestCase):
         c = p.draw()
         self.assertTrue(isinstance(c, None))
 
-    def test_draw_card(self):
+    def test_discard_card(self):
         p = Player()
         c = p.draw()
         d = p.discard(c)
