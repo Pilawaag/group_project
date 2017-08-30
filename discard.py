@@ -5,7 +5,7 @@ class Discard:
     def __init__(self):
         self.discard_pile = []
 
-    def discard(card):
+    def discard(self,card):
         self.discard_pile.append(card)
 
     def __str__(self):

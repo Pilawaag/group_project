@@ -2,7 +2,7 @@
 import unittest
 from discard import Discard
 
-class TestDiscard:
+class TestDiscard(unittest.TestCase):
 
     def test_discard(self):
         pile = Discard()
