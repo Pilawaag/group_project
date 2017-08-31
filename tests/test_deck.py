@@ -9,4 +9,4 @@ class TestDeck(TestCase):
 
     def test_deck_length(self):
         d = Deck()
-        self.assertEqual(len(d), 0)
+        self.assertEqual(d.count, 0)
