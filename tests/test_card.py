@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import unittest
-from player import Card
+from card import Card
 
 class TestCard(unittest.TestCase):
     def test_create_card(self):
