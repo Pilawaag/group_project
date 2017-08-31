@@ -6,7 +6,7 @@ from card import Card
 class TestCard(unittest.TestCase):
     def test_create_card(self):
         c = Card("name", "fire")
-        self.assertTrue(isinstance(c, Card))
+        self.assertIsInstance(c, Card)
 
     def test_get_card_properties(self):
         c = Card("name", "fire")
