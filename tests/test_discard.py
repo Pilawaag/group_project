@@ -7,7 +7,7 @@ class TestDiscard(unittest.TestCase):
     def test_discard(self):
         pile = Discard()
         pile.discard("my soul")
-        print(pile)
+        self.assertEqual(pile.__str__(), "my soul\n")
 
 if __name__ == "__main__":
     unittest.main()
